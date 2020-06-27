@@ -21,22 +21,40 @@ body {
     display: flex;
 }
 
-#control-module {
+.module {
     background-color:  hsl(228, 56%, 26%);
     width: 20em;
     margin: 1em;
     padding: 2em;
+    border-radius: 10px;
 }
 
-#status-module {
-    background-color: hsl(228, 56%, 26%);
-    width: 30em;
-    margin: 1em;
-    padding: 2em;
+#control-container{
+    display: flex;
+    padding-top: 1.5em;
 }
+
+.icon {
+    background-color: hsl(229, 57%, 11%); 
+    height: 2.5em;
+    width: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: .25em;
+}
+
+.icon img {
+    width: 1.25em;
+}
+
+
+
 
 .attribution { 
-    text-align: center;    
+    text-align: center; 
+    padding: 1em;   
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
