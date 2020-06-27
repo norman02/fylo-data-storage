@@ -10,23 +10,35 @@ body {
     font-family: 'Raleway', sans-serif;
     color: hsl(243, 100%, 93%);
     font-weight: 400;
+    font-size: 14px;
     align-items: center;
     justify-items: center;
 }
 
 #component-container {
     margin: auto;
-    width: 50%;
+    width: 75%;
     padding: 20em;
     display: flex;
+    align-items: flex-end;
 }
 
 .module {
     background-color:  hsl(228, 56%, 26%);
-    width: 20em;
     margin: 1em;
     padding: 2em;
     border-radius: 10px;
+}
+
+#control-module {
+    width: 20em;
+    height: 10em;
+    border-radius: 10px 100px 10px 10px;
+}
+
+#status-module {
+    width: 35em;
+    height: 6em;
 }
 
 #control-container{
@@ -36,17 +48,17 @@ body {
 
 .icon {
     background-color: hsl(229, 57%, 11%); 
-    height: 2.5em;
-    width: 2.5em;
+    height: 3.5em;
+    width: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin: .25em;
+    margin: .5em;
 }
 
 .icon img {
-    width: 1.25em;
+    width: 1.5em;
 }
 
 
