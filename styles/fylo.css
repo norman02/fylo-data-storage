@@ -1,61 +1,51 @@
-body , html{
-   height: 100%;
-}
-
-html {
-    background-color: hsl(229, 57%, 11%);
-    
-}
-
 body {
     font-family: 'Raleway', sans-serif;
     color: hsl(243, 100%, 93%);
     font-weight: 400;
-    font-size: 14px;
-    align-items: center;
-    justify-items: center;
-    background-image: url('../images/bg-desktop.png');
-    background-repeat: no-repeat;
-    background-position: bottom ;
-    background-size: contain;
-    
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: URL('../images/bg-desktop.png') no-repeat right bottom;
+    background-size: 100% 50%;
+    background-color: hsl(229, 57%, 11%)
 }
 
 #component-container {
     margin: auto;
     width: 50%;
-    padding: 20em;
+    padding: 20rem;
     display: flex;
     align-items: flex-end;   
 }
 
 .module {
     background-color:  hsl(228, 56%, 26%);
-    margin: 1em;
-    padding: 2em;
+    margin: 1rem;
+    padding: 2rem;
     border-radius: 10px;
 }
 
 #control-module {
-    width: 20em;
-    height: 10em;
+    width: 35%;
+    height: 10rem;
     border-radius: 10px 100px 10px 10px;
 }
 
 #control-container{
     display: flex;
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 
 .icon {
     background-color: hsl(229, 57%, 11%); 
-    height: 3.5em;
-    width: 3.5em;
+    height: 3.5rem;
+    width: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin: .5em;
+    margin: .5rem;
 }
 
 .icon:hover {
@@ -63,21 +53,21 @@ body {
 }
 
 .icon img {
-    width: 1.5em;
+    width: 1.5rem;
 }
 
 #status-module {
-    width: 35em;
-    height: 6em;
+    width: 35rem;
+    height: 6rem;
 }
 
 em {
     font-weight: 700;
-    padding-right: 0.2em;
+    padding-right: 0.2rem;
 }
 
 #right-bottum-container {
-    padding-top: 5em;
+    padding-top: 5rem;
     position: relative;
     z-index: 0;
 }
@@ -85,40 +75,40 @@ em {
 #bubble-container {
     position: absolute;
     z-index: 1;
-    top: 2em;
-    right: 8em;
+    top: 2rem;
+    right: 2.75rem;
 }
 
 #status-bar {
-    display: inline-block;
     background-color: hsl(229, 57%, 11%);
-    width: 30em;
-    height: 1.4em;
-    margin: 1em 0;
-    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
 }
 
 #status {
-    display: inline-block;
-    width: 25em;
-    height: 1em;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
-    margin: 0.2em;
-    align-items: right;
+    background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    z-index: 1;
+    width: 82%;
+    height: 13px;
+    border-radius: 50px;
+    position: relative;
 }
 
 #status-pointer {
-    display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
-    background-color: white;
-    border-radius: 100%;
-    margin-left: 24em;
+    background-color:#fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 1;
 }
 
 #status-lable {
-    width: 30em;
+    width: 30rem;
     display: flex;
     justify-content: space-between;
 }
@@ -128,7 +118,7 @@ em {
     width: 150px;
     background: #fff;
     border-radius: 10px;
-    padding: 1.5em;
+    padding: 1.5rem;
     text-align: center;
     color: #000;
 }
@@ -141,22 +131,57 @@ em {
     border-right:  24px solid #fff;
     border-top: 12px solid #fff;
     border-bottom: 20px solid transparent;
-    left: 156px;
+    left: 162px;
     bottom: -24px;
   }
 
 #number-gb {
     font-weight: 700;
-    font-size: 2em;
-    padding-right: .4em;
+    font-size: 2rem;
+    padding-right: .4rem;
 }
 
 .attribution { 
     text-align: center; 
-    padding: 1em;   
+    padding: 1rem;   
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media only screen and (max-width: 850px) {
+    body {
+        background-image: url('../images/bg-mobile.png');
+        background-position: center;
+        background-size: cover;
+    }
+    #component-container {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;   
+    }
+    #control-module {
+        width: 40%;
+        height: 10rem;
+        border-radius: 10px 100px 10px 10px;
+    }
+    #right-buttom-container {
+        width: 40%;
+        height: 6rem;
+    }
+    #bubble-container {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
 
+    #status-module {
+        width: auto;
+    }
+    
+}
 
