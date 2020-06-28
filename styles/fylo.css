@@ -4,6 +4,7 @@ body , html{
 
 html {
     background-color: hsl(229, 57%, 11%);
+    
 }
 
 body {
@@ -13,6 +14,11 @@ body {
     font-size: 14px;
     align-items: center;
     justify-items: center;
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    background-size: contain;
+    
 }
 
 #component-container {
@@ -21,6 +27,7 @@ body {
     padding: 20em;
     display: flex;
     align-items: flex-end;
+    
 }
 
 .module {
