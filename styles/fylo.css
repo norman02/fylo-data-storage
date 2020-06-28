@@ -26,8 +26,7 @@ body {
     width: 50%;
     padding: 20em;
     display: flex;
-    align-items: flex-end;
-    
+    align-items: flex-end;   
 }
 
 .module {
@@ -57,6 +56,10 @@ body {
     justify-content: center;
     border-radius: 10px;
     margin: .5em;
+}
+
+.icon:hover {
+    background-color: hsl(243, 100%, 93%);
 }
 
 .icon img {
@@ -154,3 +157,6 @@ em {
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
