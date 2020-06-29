@@ -90,6 +90,10 @@ main {
     padding: 3rem 0 2rem 3rem;
 }
 
+em {
+    font-weight: 700;
+}
+
 #status-bar {
     margin-left: 3rem;
     width: 42rem;
@@ -111,7 +115,7 @@ main {
     z-index: 1;
     position: relative;
     border-radius: 10px;
-    display: fl;
+    display: flex;
 }
 
 #status-top {
@@ -124,6 +128,14 @@ main {
     position: absolute;
     right: 0;
     top: 1;
+}
+
+#status-text {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 42rem;
 }
 
 .attribution { 
