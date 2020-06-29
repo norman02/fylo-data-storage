@@ -1,2 +1,50 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+html {
+    font-size: 10px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    color: var(--PaleBlue);
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+main {
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    top: 0;
+    right: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-image: url('../images/bg-mobile.png');
+        background-size: cover;
+    }
+}
