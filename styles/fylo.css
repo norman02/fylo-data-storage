@@ -51,6 +51,30 @@ main {
     padding-bottom: 3rem;
 }
 
+#button-container {
+    padding-left: 3rem;
+    display: flex;
+}
+
+.button {
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--PaleBlue);
+}
+
+.button img {
+    width: 2rem;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
