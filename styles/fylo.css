@@ -75,6 +75,17 @@ main {
     width: 2rem;
 }
 
+#right-bottom {
+
+}
+
+#status-panel {
+    background-color: var(--DarkBlue);
+    height: 12rem;
+    width: 48rem;
+    border-radius: 10px;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
