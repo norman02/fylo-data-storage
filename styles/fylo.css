@@ -90,6 +90,42 @@ main {
     padding: 3rem 0 2rem 3rem;
 }
 
+#status-bar {
+    margin-left: 3rem;
+    width: 42rem;
+}
+
+#status-bottom {
+    background-color: var(--VeryDarkBlue);
+    width: 100%;
+    height: 1.8rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+#status-middle {
+    background: linear-gradient(to right, hsl(6, 100%, 80%),  hsl(335, 100%, 65%));
+    width: 81.5%;
+    height: 1.4rem;
+    margin: 0.2rem;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+    display: fl;
+}
+
+#status-top {
+    z-index: 2;
+    background-color: white;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0.1rem;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 1;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
