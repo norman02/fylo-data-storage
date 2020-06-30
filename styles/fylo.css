@@ -138,6 +138,41 @@ em {
     width: 42rem;
 }
 
+#bubble-container {
+    position: relative;
+    left: 285px;
+    top: 20px;
+}
+
+.bubble {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px 10px 0 10px;
+    color: var(--GrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bubble-bottom:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 26px solid white;
+    border-left: 26px solid transparent;
+    left: 134px;
+    bottom: -22px;
+  }
+
+.big-text {
+    color: black;
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
