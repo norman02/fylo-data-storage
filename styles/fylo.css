@@ -28,7 +28,7 @@ body {
     justify-content: center;  
 }
 
-main {
+#main {
     font-size: 14px;
     display: flex;
     align-items: flex-end;
@@ -191,7 +191,7 @@ em {
         background-size: cover;
     }
 
-    main {
+    #main {
         margin: 0;
         width: 80%;
         flex-direction: column;
