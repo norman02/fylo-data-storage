@@ -204,11 +204,25 @@ em {
 
     #right-bottom {
         margin: 0;
-        margin-top: 3rem;
         width: 100%;   
+    }
+    #status-panel {
+        height: 14rem;      
     }
 
     #bubble-container {
+        top: 175px;
+        left: auto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bubble {
+        border-radius: 10px;
+    }
+
+    .bubble-bottom:before{
         display: none;
     }
 
