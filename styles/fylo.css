@@ -76,13 +76,13 @@ main {
 }
 
 #right-bottom {
-
+    width: 48rem;
 }
 
 #status-panel {
     background-color: var(--DarkBlue);
     height: 12rem;
-    width: 48rem;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -96,7 +96,7 @@ em {
 
 #status-bar {
     margin-left: 3rem;
-    width: 42rem;
+    width: 85%;
 }
 
 #status-bottom {
@@ -135,7 +135,7 @@ em {
     justify-content: space-between;
     margin-left: 3rem;
     margin-top: 1rem;
-    width: 42rem;
+    width: 85%;
 }
 
 #bubble-container {
@@ -192,8 +192,28 @@ em {
     }
 
     main {
+        margin: 0;
+        width: 80%;
         flex-direction: column;
     }
+
+    #left-top {
+        margin: 0;
+        width: 100%;
+    }
+
+    #right-bottom {
+        margin: 0;
+        margin-top: 3rem;
+        width: 100%;   
+    }
+
+    #bubble-container {
+        display: none;
+    }
+
+    
+
 }
 
 
